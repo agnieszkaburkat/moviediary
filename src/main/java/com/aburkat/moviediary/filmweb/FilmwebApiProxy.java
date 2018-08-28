@@ -9,7 +9,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Proxy class for using to gain access to filmweb api.
+ * Proxy class used to gain access to filmweb api.
  */
 @Service
 public class FilmwebApiProxy implements FilmwebLibrary {
@@ -28,7 +28,7 @@ public class FilmwebApiProxy implements FilmwebLibrary {
     return filmwebImpl.findMoviesByTitle(title);
   }
 
-  public void checkConnection() {
+  public static void checkConnection() {
     ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor(r -> new Thread(r, "filmweb connection checkup"));
     executorService.scheduleAtFixedRate(() -> System.out.println("lol"), 10, 30, TimeUnit.SECONDS);
   }
