@@ -22,7 +22,9 @@ public class Movie {
   private String title;
   private String alternativeTitle;
   private String cast;
+  private String imageUrl;
   private Integer premiereYear;
+  private Long filmwebId;
   private String remarks;
 
  // private Genre genre;

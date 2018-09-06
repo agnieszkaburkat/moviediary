@@ -56,7 +56,7 @@ dependencies {
 }
 
 flyway {
-  url = 'jdbc:mysql://127.0.0.1:3306/moviediary?useUnicode=true&useJDBCCompliantTimezoneShift=true&serverTimezone=CET'
+  url = 'jdbc:mysql://127.0.0.1:3306/multimedia?useUnicode=true&useJDBCCompliantTimezoneShift=true&serverTimezone=CET'
   user = 'root'
   password = 'kotek666'
   locations = ['filesystem:src/main/resources/db/migration']
